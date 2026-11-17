@@ -1,0 +1,16 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+
+# Logs & Temporary Runtime Files
+logs/*.log
+artifacts/logs/
+artifacts/best_ppo/
+.DS_Store
+Thumbs.db

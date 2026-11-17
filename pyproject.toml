@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dc-energy-optimization"
+version = "1.0.0"
+description = "AI-Based Data Center Energy Optimization System using Digital Twins, LSTM Forecasting, and Safe Deep Reinforcement Learning"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"

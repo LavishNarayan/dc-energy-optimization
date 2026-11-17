@@ -1,0 +1,24 @@
+algorithm: "PPO"
+seed: 42
+episode_days: 3
+total_timesteps: 100000
+eval_freq: 10000
+n_eval_episodes: 3
+
+ppo:
+  learning_rate: 0.0003
+  n_steps: 2048
+  batch_size: 128
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.20
+  ent_coef: 0.005
+  net_arch_pi: [256, 256]
+  net_arch_vf: [256, 256]
+
+paths:
+  forecaster_path: "artifacts/lstm_forecaster.pt"
+  model_save_path: "artifacts/ppo_dc_optimizer"
+  best_model_dir: "artifacts/best_ppo"
+  log_dir: "artifacts/logs"

@@ -1,0 +1,7 @@
+Controller,Mean PUE,Total Energy (kWh),Cooling Energy (kWh),CO2 Emissions (kg),Est. Cost ($),Peak Inlet Temp (C),SLA Violations (>27C),Shield Overrides,Scenario,Total Energy Saved (%),Cooling Saved (%)
+PID Baseline,1.416,12402.6,3764.6,4912.4,1488.32,22.54,0,0,7-Day Normal Operation,0.0,0.0
+PPO + LSTM (Raw),1.409,11573.5,3430.7,4591.9,1388.82,25.12,0,0,7-Day Normal Operation,6.68,8.87
+PPO + LSTM + Shield,1.409,11573.5,3430.7,4591.9,1388.82,25.12,0,0,7-Day Normal Operation,6.68,8.87
+PID Baseline,1.527,6085.8,2191.4,2406.5,730.3,22.72,0,0,3-Day Stress Test (Load Spike + Chiller Fault),0.0,0.0
+PPO + LSTM (Raw),1.527,5784.5,2072.1,2293.3,694.15,24.81,0,0,3-Day Stress Test (Load Spike + Chiller Fault),4.95,5.44
+PPO + LSTM + Shield,1.527,5784.5,2072.1,2293.3,694.15,24.81,0,0,3-Day Stress Test (Load Spike + Chiller Fault),4.95,5.44

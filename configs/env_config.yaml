@@ -1,0 +1,35 @@
+environment:
+  num_racks: 10
+  servers_per_rack: 20
+  dt_seconds: 300.0
+  substeps: 15
+  forecast_horizon: 12
+
+servers:
+  p_server_idle_w: 120.0
+  p_server_peak_w: 450.0
+  p_server_sleep_w: 15.0
+  cpu_power_exponent: 1.3
+  max_consolidated_util: 0.85
+
+crac_and_chiller:
+  t_supply_min_c: 16.0
+  t_supply_max_c: 24.0
+  airflow_min_frac: 0.30
+  airflow_max_frac: 1.00
+  cop_nominal: 4.0
+  cop_supply_slope: 0.08
+  cop_ambient_slope: 0.06
+  p_fan_max_kw: 18.0
+  p_pump_base_kw: 2.0
+
+ashrae_limits:
+  t_inlet_safe_max_c: 27.0
+  t_inlet_critical_c: 30.0
+  shield_trigger_temp_c: 26.4
+
+reward_weights:
+  w_energy: 1.0
+  w_carbon: 0.4
+  w_thermal: 2.5
+  w_smoothness: 0.15

@@ -1,0 +1,16 @@
+{
+  "lstm_forecaster": {
+    "trained_at_utc": "2026-11-15T11:03:31.161175+00:00",
+    "epochs": 25,
+    "best_val_loss": 0.031574,
+    "cpu_mae_15min_pct": 2.98,
+    "cpu_mae_60min_pct": 3.081,
+    "ambient_mae_60min_c": 0.363
+  },
+  "ppo_agent": {
+    "trained_at_utc": "2026-11-17T14:55:26.177966+00:00",
+    "total_timesteps": 100000,
+    "episode_days": 3,
+    "model_path": "artifacts/ppo_dc_optimizer.zip"
+  }
+}
